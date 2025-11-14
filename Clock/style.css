@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Titan+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "BBH Sans Hegarty", sans-serif;
+    color: white;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hr {
+    color: #FFCDD2 ;
+}
+.dots {
+    height: 8px;
+    width: 8px;
+    background: #000000;
+background: linear-gradient(20deg, rgba(0, 0, 0, 0.349) 0%, rgb(237, 237, 237) 100%);
+    border-radius: 50%;
+    margin: 2px 0;
+}
+
+.min{
+  color:#E1BEE7;
+}
+
+.min span{
+    color: #FFF59C;
+}
