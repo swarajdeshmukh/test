@@ -21,24 +21,69 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 20px;
 }
 
 .hr {
     color: #FFCDD2 ;
-}
-.dots {
-    height: 8px;
-    width: 8px;
-    background: #000000;
-background: linear-gradient(20deg, rgba(0, 0, 0, 0.349) 0%, rgb(237, 237, 237) 100%);
-    border-radius: 50%;
-    margin: 2px 0;
+    font-size: 140px;
 }
 
 .min{
-  color:#E1BEE7;
+    color:#E1BEE7;
+    font-size: 140px;
 }
 
 .min span{
     color: #FFF59C;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+}
+
+.dots {
+    height: 40px;
+    width: 40px;
+    background: linear-gradient(20deg, rgba(0, 0, 0, 0.349) 0%, rgb(237, 237, 237) 100%);
+    border-radius: 50%;
+    margin: 4px 0;
+}
+
+/* --------------------------------------------- */
+/* 📱 Mobile portrait → Force landscape rotation */
+/* --------------------------------------------- */
+@media (max-width: 600px) and (orientation: portrait) {
+    body {
+        transform: rotate(90deg);
+        width: 100vh;
+        height: 100vw;
+        overflow: hidden;
+    }
+}
+
+/* --------------------------------------------- */
+/* 📱 Mobile landscape view */
+/* --------------------------------------------- */
+@media (max-width: 600px) and (orientation: landscape) {
+    .hr, .min {
+        font-size: 90px;
+    }
+    .dots {
+        height: 8px;
+        width: 8px;
+    }
+}
+
+/* --------------------------------------------- */
+/* 📱 Tablet */
+@media (max-width: 900px) {
+    .hr, .min {
+        font-size: 110px;
+    }
+    .dots {
+        height: 9px;
+        width: 9px;
+    }
 }
